@@ -109,11 +109,11 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private void moveCamera(GoogleMap googleMap, LatLng coord) {
         CameraPosition cameraPosition = CameraPosition.builder()
                 .target(coord) // Localizacao informada
-                .zoom(10) // Zoom da camera
+                .zoom(14) // Zoom da camera
                 .build();
 
-        // Move a camera do mapa
-        googleMap.moveCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
+        // Move a camera do mapa (pode usar os metodos  - moveCamera() ou animateCamera()
+        googleMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
     }
 
     private LatLng addNewMarker(double lat, double lon, GoogleMap googleMap) {
