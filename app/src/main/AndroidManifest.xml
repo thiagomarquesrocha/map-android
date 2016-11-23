@@ -12,9 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+        <!-- Chave do Google configurada no console -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyA-VeXokCkzITkHhjiuyBuFIrRAOdCXmF0" />
+            android:value="@string/api_key" />
 
         <activity android:name=".MainActivity">
             <intent-filter>
